@@ -7,7 +7,7 @@ let mountains_front=document.querySelector('#mountains_front');
 let header= document.querySelector('header')
 window.addEventListener('scroll', function(){
     let value=window.scrollY;
-    if(value<=this.screen.height){
+    if(value<=this.window.innerHeight){
         stars.style.left=value*0.25+'px';
         moon.style.top=value*1.25+'px';
         mountains_behind.style.top=value*0.5+'px';
